@@ -42,19 +42,19 @@ const Contact = () => {
                     {/* address, phone & email */}
                     <div className='flex flex-col gap-y-3 mb-8'>
                       {/* address */}
-                      <div className='flex items-center gap-[10px]'>
+                      <div className='font-medium flex items-center gap-[10px]'>
                         <div>{address.icon}</div>
-                        <div className='font-medium'>{address.name}</div>
+                        <div className=''>{address.name}</div>
                       </div>
                       {/* phone */}
                       <div className='flex items-center gap-[10px]'>
                         <div>{phone.icon}</div>
-                        <div className='font-medium'>{phone.number}</div>
+                        <div className=''>{phone.number}</div>
                       </div>
                       {/* email */}
                       <div className='flex items-center gap-[10px]'>
                         <div>{email.icon}</div>
-                        <div className='font-medium'>{email.address}</div>
+                        <div className=''>{email.address}</div>
                       </div>
                     </div>
                     {/* link */}

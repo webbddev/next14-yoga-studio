@@ -8,7 +8,7 @@ const Copyright = () => {
   return (
     <div className='bg-dark text-[#dbdbdb] py-6 border-t border-[#2b2b2b]'>
       <div className='container mx-auto'>
-        <motion.div
+         <motion.div
           initial={{ y: 40, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{
@@ -21,7 +21,7 @@ const Copyright = () => {
           className='tracking-[0.02em] text-base'
         >
           &copy; {currentYear}{' '}
-          <span className='font-semibold text-white'>Yoga Lucia Studio</span>
+          <span className='font-semibold text-white'>Yoga Lucia Studio</span>{' '}
           All right reserved
         </motion.div>
       </div>

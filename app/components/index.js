@@ -3,7 +3,6 @@ export { default as Contact } from './Contact';
 export { default as Copyright } from './Copyright';
 export { default as Footer } from './Footer';
 export { default as GallerySection } from './GallerySection';
-export { default as GalleryNextSection } from './GalleryNextSection';
 export { default as Header } from './Header.jsx';
 export { default as Hero } from './Hero';
 export { default as Interview } from './Interview';
