@@ -9,6 +9,7 @@ import {
   Interview,
   Skills,
   Testimonial,
+  Footer,
 } from './components';
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <Testimonial />
       <Interview />
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -5,6 +5,7 @@ import { contactData } from '../data';
 import { motion } from 'framer-motion';
 // import fade in
 import { fadeIn } from '../variants';
+import Link from 'next/link';
 const Contact = () => {
   // destructure contact data
   const { title, info, form } = contactData;
@@ -21,7 +22,7 @@ const Contact = () => {
             className='flex-1'
           >
             {/* title */}
-            <h2>{title}</h2>
+            <h2 className='font-thin'>{title}</h2>
             {/* info items */}
             <div className='flex flex-col xl:flex-row gap-x-5 gap-y-16 xl:gap-y-0'>
               {info.map((item, index) => {
@@ -31,11 +32,11 @@ const Contact = () => {
                   // contact item
                   <div key={index}>
                     {/* title */}
-                    <div className='font-primary uppercase font-medium text-xl mb-3'>
+                    <div className='font-oswald uppercase font-medium text-xl mb-3'>
                       {title}
                     </div>
                     {/* subtitle */}
-                    <div className='mb-6 text-[#333] leading-[187%] tracking-[0.02em]'>
+                    <div className='font-thin mb-6 text-[#333] leading-[187%] tracking-[0.02em]'>
                       {subtitle}
                     </div>
                     {/* address, phone & email */}
@@ -57,12 +58,12 @@ const Contact = () => {
                       </div>
                     </div>
                     {/* link */}
-                    <a
-                      className='font-medium border-b border-dark pb-[5px]'
+                    <Link
+                      className='font-thin border-b border-dark pb-[5px]'
                       href='#'
                     >
                       {link}
-                    </a>
+                    </Link>
                   </div>
                 );
               })}
@@ -76,7 +77,7 @@ const Contact = () => {
             viewport={{ once: false, amount: 0.4 }}
             className='flex-1 xl:pl-[40px] flex justify-center items-center'
           >
-            <form className='flex flex-col gap-y-10 w-full' action=''>
+            <form className='flex flex-col gap-y-10 w-full font-thin' action=''>
               <input
                 className='border-b border-dark placeholder:text-[#555] italic tracking-[0.06em] outline-none pb-4'
                 placeholder={form.name}
