@@ -51,7 +51,7 @@ const Map = () => {
   return (
     <section>
       <MapContainer
-        center={[34.052235, -118.243683]}
+        center={[46.98959154370678, 28.86788606643677]}
         zoom={isMobile ? 10 : 12}
         className={`${isMobile ? 'h-[300px]' : 'h-[900px]'} z-10`}
         zoomControl={false}
@@ -86,15 +86,6 @@ const Map = () => {
           );
         })}
       </MapContainer>
-      {/* <iframe
-        src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21748.996764401938!2d28.8624071!3d47.0475968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97cefaf4ca33b%3A0x1fe1be761fa1ef3a!2zUsOiyJljYW5pIEZvcmVzdC1QYXJr!5e0!3m2!1sen!2s!4v1715932015051!5m2!1sen!2s'
-        width='600'
-        height='450'
-        style='border:0;'
-        allowfullscreen=''
-        loading='lazy'
-        referrerpolicy='no-referrer-when-downgrade'
-      ></iframe> */}
     </section>
   );
 };

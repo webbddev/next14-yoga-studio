@@ -11,6 +11,7 @@ import NavMobile from './NavMobile';
 import Socials from './Socials';
 // import icons
 import { TiThMenuOutline } from 'react-icons/ti';
+import Link from 'next/link';
 
 const Header = () => {
   // destructure header data
@@ -21,29 +22,38 @@ const Header = () => {
   const [navMobile, setNavMobile] = useState(false);
 
   // scroll event
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsActive(true);
-      } else {
-        setIsActive(false);
-      }
-    };
-
-    if (typeof window !== 'null') {
-      window.addEventListener('scroll', handleScroll);
+  // useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setIsActive(true);
+    } else {
+      setIsActive(false);
     }
+  };
 
-    return () => {
-      if (typeof window !== 'null') {
-        window.removeEventListener('scroll', handleScroll);
-      }
-    };
-  }, []);
+  if (typeof window !== 'undefined') {
+    window.addEventListener('scroll', handleScroll);
+  }
+
+  return () => {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  };
+  // }, []);
 
   const closeMobileMenu = () => {
     setNavMobile(false); // Function to close the mobile menu
   };
+
+  // useEffect(() => {
+  //   window.addEventListener('scroll', () => {
+  //     window.scrollY > 50 ? setIsActive(true) : setIsActive(false);
+  //   });
+  // });
+  // const closeMobileMenu = () => {
+  //   setNavMobile(false); // Function to close the mobile menu
+  // };
 
   return (
     <header
@@ -53,7 +63,7 @@ const Header = () => {
     >
       <div className='flex items-center justify-between h-full pl-[50px] pr-[60px] md:pr-[80px] md:pl-[80px] lg:pl-[100px] lg:pr-[100px] xl:pl-[140px] xl:pr-[140px] 2xl:pl-[180px] 2xl:pr-[180px]'>
         {/* logo */}
-        <a href='/'>
+        <Link href='/'>
           <Image
             className='w-[188px] h-[90px]'
             src={logo}
@@ -61,7 +71,7 @@ const Header = () => {
             width={188}
             height={90}
           />
-        </a>
+        </Link>
         {/* nav - initially hidden, show on desktop */}
         <div className='hidden lg:flex mx-auto'>
           <NavLinks />

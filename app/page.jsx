@@ -14,7 +14,7 @@ import {
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Hero />
       <About />
       <GallerySection />
@@ -24,6 +24,6 @@ export default function Home() {
       <Contact />
       <Map />
       <Footer />
-    </div>
+    </>
   );
 }
