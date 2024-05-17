@@ -11,3 +11,4 @@ export { default as NavMobile } from './NavMobile';
 export { default as Skills } from './Skills';
 export { default as Socials } from './Socials';
 export { default as Testimonial } from './Testimonial';
+export { default as Map } from './Map';

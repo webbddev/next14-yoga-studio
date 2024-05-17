@@ -30,10 +30,10 @@ const Skills = () => {
   useEffect(() => {
     if (inView) {
       setTimeout(() => {
-        if (fullBody < 90) {
+        if (fullBody < 100) {
           setFullBody(fullBody + 1);
         }
-        if (piercing < 80) {
+        if (piercing < 500) {
           setPiercing(piercing + 1);
         }
         if (fullColor < 75) {
@@ -81,7 +81,7 @@ const Skills = () => {
             />
             {/* text */}
             <div className='uppercase font-light tracking-[1.2px] text-center'>
-              Full Body Tattoo
+              Love Meat
             </div>
           </div>
           <div className='w-[150px] lg:w-[210px] flex flex-col items-center gap-y-6'>
@@ -93,7 +93,7 @@ const Skills = () => {
             />
             {/* text */}
             <div className='uppercase font-light tracking-[1.2px] text-center'>
-              Safely Piercing
+              No Love Vegans
             </div>
           </div>
           <div className='w-[150px] lg:w-[210px] flex flex-col items-center gap-y-6'>

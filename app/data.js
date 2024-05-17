@@ -48,9 +48,10 @@ export const socialData = [
 ];
 
 export const heroData = {
-  title: 'I’m Fede Sir.',
+  title: 'I’m Dima, Sir.',
   subtitle:
-    'Tattoos have their own unique power and magic. They not only beautify the body but also the psyche.',
+    "I tell you what I happy. Me hate vegans. Me hate vegans so much that when they ask me for a tattoo of 'I love avocado' I make a tattoo of... 'I LOOOVE MEAT'. They leave no happy. But I am:)",
+  // 'Tattoos have their own unique power and magic. They not only beautify the body but also the psyche.',
   btnText: 'read more',
   btnIcon: <IoMdArrowForward />,
 };

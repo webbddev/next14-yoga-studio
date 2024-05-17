@@ -10,6 +10,7 @@ import {
   Skills,
   Testimonial,
   Footer,
+  Map
 } from './components';
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <Testimonial />
       <Interview />
       <Contact />
+      <Map />
       <Footer />
     </div>
   );
