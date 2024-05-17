@@ -40,11 +40,11 @@ export const navLinksData = {
 };
 
 export const socialData = [
-  { href: '/', icon: <GrFacebookOption /> },
-  { href: '/', icon: <IoLogoInstagram /> },
-  { href: '/', icon: <IoLogoPinterest /> },
-  { href: '/', icon: <IoLogoTwitter /> },
-  { href: '/', icon: <IoLogoYoutube /> },
+  { href: '#', icon: <GrFacebookOption /> },
+  { href: '#', icon: <IoLogoInstagram /> },
+  { href: '#', icon: <IoLogoPinterest /> },
+  { href: '#', icon: <IoLogoTwitter /> },
+  { href: '#', icon: <IoLogoYoutube /> },
 ];
 
 export const heroData = {
