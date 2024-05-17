@@ -1,4 +1,3 @@
-'use client';
 export default function NotFound() {
   return (
     <div className='m-auto space-y-5 text-center'>

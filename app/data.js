@@ -30,7 +30,7 @@ export const headerData = {
 
 export const navLinksData = {
   items: [
-    { href: '#home', name: 'Home' },
+    { href: '/', name: 'Home' },
     { href: '#about', name: 'About' },
     { href: '#gallery', name: 'Gallery' },
     { href: '#interview', name: 'Interview' },

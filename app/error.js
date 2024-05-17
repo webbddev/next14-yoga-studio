@@ -1,6 +1,6 @@
 'use client';
 
-export default function error({ error, reset }) {
+export default function Error({ error, reset }) {
   return (
     <main className='text-center'>
       <h2 className='text-4xl'>Oh No!</h2>
