@@ -22,38 +22,29 @@ const Header = () => {
   const [navMobile, setNavMobile] = useState(false);
 
   // scroll event
-  // useEffect(() => {
-  const handleScroll = () => {
-    if (window.scrollY > 50) {
-      setIsActive(true);
-    } else {
-      setIsActive(false);
-    }
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsActive(true);
+      } else {
+        setIsActive(false);
+      }
+    };
 
-  if (typeof window !== 'undefined') {
-    window.addEventListener('scroll', handleScroll);
-  }
-
-  return () => {
     if (typeof window !== 'undefined') {
-      window.removeEventListener('scroll', handleScroll);
+      window.addEventListener('scroll', handleScroll);
     }
-  };
-  // }, []);
+
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, []);
 
   const closeMobileMenu = () => {
     setNavMobile(false); // Function to close the mobile menu
   };
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', () => {
-  //     window.scrollY > 50 ? setIsActive(true) : setIsActive(false);
-  //   });
-  // });
-  // const closeMobileMenu = () => {
-  //   setNavMobile(false); // Function to close the mobile menu
-  // };
 
   return (
     <header

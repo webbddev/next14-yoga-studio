@@ -8,9 +8,6 @@ import { Icon } from 'leaflet';
 // leaflet css
 import 'leaflet/dist/leaflet.css';
 
-import { motion } from 'framer-motion';
-import { fadeIn } from '../variants';
-
 const markers = [
   {
     position: [51.53154734935135, -0.16204833984375003],
@@ -55,7 +52,6 @@ const Map = () => {
         zoom={isMobile ? 10 : 12}
         className={`${isMobile ? 'h-[300px]' : 'h-[900px]'} z-10`}
         zoomControl={false}
-        // scrollWheelZoom={false}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
