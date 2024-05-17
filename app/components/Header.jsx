@@ -19,12 +19,28 @@ const Header = () => {
   const [isActive, setIsActive] = useState(false);
   // nav mobile state
   const [navMobile, setNavMobile] = useState(false);
+
   // scroll event
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      window.scrollY > 50 ? setIsActive(true) : setIsActive(false);
-    });
-  });
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsActive(true);
+      } else {
+        setIsActive(false);
+      }
+    };
+
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', handleScroll);
+    }
+
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, []);
+
   const closeMobileMenu = () => {
     setNavMobile(false); // Function to close the mobile menu
   };

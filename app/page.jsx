@@ -4,13 +4,12 @@ import {
   About,
   Contact,
   GallerySection,
-  GalleryNextSection,
   Hero,
   Interview,
   Skills,
   Testimonial,
   Footer,
-  Map
+  Map,
 } from './components';
 
 export default function Home() {
@@ -19,7 +18,6 @@ export default function Home() {
       <Hero />
       <About />
       <GallerySection />
-      {/* <GalleryNextSection/> */}
       <Skills />
       <Testimonial />
       <Interview />
