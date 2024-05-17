@@ -30,12 +30,12 @@ const Header = () => {
       }
     };
 
-    if (typeof window !== 'undefined') {
+    if (typeof window !== 'null') {
       window.addEventListener('scroll', handleScroll);
     }
 
     return () => {
-      if (typeof window !== 'undefined') {
+      if (typeof window !== 'null') {
         window.removeEventListener('scroll', handleScroll);
       }
     };
