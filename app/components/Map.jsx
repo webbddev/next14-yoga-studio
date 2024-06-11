@@ -24,7 +24,7 @@ const markers = [
     image: '/img/map/2.png',
   },
   {
-    position: [46.98959154370678, 28.86788606643677],
+    position: [46.99243412872698, 28.86501863340431],
     title: 'Yoga Studio Lucia',
     subtitle: "It's best in class, go stretch your a@@!",
     image: '/img/map/5.png',
