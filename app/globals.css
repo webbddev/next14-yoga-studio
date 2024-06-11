@@ -8,6 +8,9 @@ html {
 
 /* apply some general styles */
 @layer base {
+  * {
+    @apply box-border;
+  }
   body {
     @apply font-secondary text-lg text-dark bg-[#E5E5E5];
   }

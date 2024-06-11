@@ -1,7 +1,9 @@
+'use client'
+
 import React from 'react';
 import Link from 'next/link';
 // import footer data
-import { footerData } from '../data';
+import { footerData } from '../../data';
 // import motion
 import { motion } from 'framer-motion';
 // import fadeIn

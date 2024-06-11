@@ -1,10 +1,12 @@
+'use client';
+
 import React, { useState } from 'react';
 import NextJsImage from './NextJsImage';
 // import motion & fadeIn
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 // import data
-import { galleryData } from '../data';
+import { galleryData } from '../../data';
 // import photo album & lightbox
 import { PhotoAlbum } from 'react-photo-album';
 import Lightbox from 'yet-another-react-lightbox';

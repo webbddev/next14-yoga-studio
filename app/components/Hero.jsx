@@ -1,6 +1,8 @@
+'use client'
+
 import React from 'react';
 // import hero data
-import { heroData } from '../data';
+import { heroData } from '../../data';
 // import motion
 import { motion } from 'framer-motion';
 // import fadeIn

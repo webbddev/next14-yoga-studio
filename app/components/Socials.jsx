@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 // import social data
-import { socialData } from '../data';
+import { socialData } from '../../data';
 
 const Socials = () => {
   return (

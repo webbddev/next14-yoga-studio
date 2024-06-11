@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { navLinksData } from '../data';
+import { navLinksData } from '../../data';
 
 const NavLinks = () => {
   // destructure nav data

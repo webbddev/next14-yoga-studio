@@ -1,11 +1,14 @@
+'use client';
+
 import React from 'react';
 // import contact data
-import { contactData } from '../data';
+import { contactData } from '../../data';
 // import motion
 import { motion } from 'framer-motion';
 // import fade in
 import { fadeIn } from '../variants';
 import Link from 'next/link';
+
 const Contact = () => {
   // destructure contact data
   const { title, info, form } = contactData;
@@ -28,6 +31,7 @@ const Contact = () => {
               {info.map((item, index) => {
                 // destructure item
                 const { title, subtitle, address, phone, email, link } = item;
+
                 return (
                   // contact item
                   <div key={index}>

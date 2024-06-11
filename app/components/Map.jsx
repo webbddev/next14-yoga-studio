@@ -7,6 +7,8 @@ import { Icon } from 'leaflet';
 
 // leaflet css
 import 'leaflet/dist/leaflet.css';
+import 'leaflet-defaulticon-compatibility';
+import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 
 const markers = [
   {
@@ -50,8 +52,11 @@ const Map = () => {
       <MapContainer
         center={[46.98959154370678, 28.86788606643677]}
         zoom={isMobile ? 10 : 12}
-        className={`${isMobile ? 'h-[300px]' : 'h-[900px]'} z-10`}
+        className={`${
+          isMobile ? 'h-[300px]' : 'h-[900px] w-[95vw] mx-auto'
+        } z-10`}
         zoomControl={false}
+        // style={{ width: '90%', height: '100%' }}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

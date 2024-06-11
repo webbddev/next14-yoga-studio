@@ -1,15 +1,15 @@
 // import images
-import Logo from '../public/img/header/logo.svg';
-import GalleryImg1 from '../public/img/gallery/1.png';
-import GalleryImg2 from '../public/img/gallery/2.png';
-import GalleryImg3 from '../public/img/gallery/3.png';
-import GalleryImg4 from '../public/img/gallery/4.png';
-import GalleryImg5 from '../public/img/gallery/5.png';
-import GalleryImg6 from '../public/img/gallery/6.png';
-import GalleryImg7 from '../public/img/gallery/7.png';
-import GalleryImg8 from '../public/img/gallery/8.png';
-import GalleryImg9 from '../public/img/gallery/kitchen.jpeg';
-import QuoteImg from '../public/img/testimonial/quote.svg';
+import Logo from './public/img/header/logo.svg';
+import GalleryImg1 from './public/img/gallery/1.png';
+import GalleryImg2 from './public/img/gallery/2.png';
+import GalleryImg3 from './public/img/gallery/3.png';
+import GalleryImg4 from './public/img/gallery/4.png';
+import GalleryImg5 from './public/img/gallery/5.png';
+import GalleryImg6 from './public/img/gallery/6.png';
+import GalleryImg7 from './public/img/gallery/7.png';
+import GalleryImg8 from './public/img/gallery/8.png';
+import GalleryImg9 from './public/img/gallery/kitchen.jpeg';
+import QuoteImg from './public/img/testimonial/quote.svg';
 // import icons
 import { GrFacebookOption } from 'react-icons/gr';
 import { IoMdArrowForward } from 'react-icons/io';

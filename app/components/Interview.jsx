@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 // import data
-import { interviewData } from '../data';
+import { interviewData } from '../../data';
 // import modal video
 import ModalVideo from 'react-modal-video';
 // modal video css

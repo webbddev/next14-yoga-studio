@@ -3,7 +3,7 @@
 import React from 'react';
 // import testimonial data
 import Image from 'next/image';
-import { testimonialData } from '../data';
+import { testimonialData } from '../../data';
 // import swiper react components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import swiper styles
@@ -50,9 +50,7 @@ const Testimonial = () => {
                       <div className='font-oswald font-regular'>{name}</div>
                       <span className='mx-4'>| </span>
                       {/* occupation */}
-                      <div className='font-oswald font-light'>
-                        {occupation}
-                      </div>
+                      <div className='font-oswald font-light'>{occupation}</div>
                     </div>
                   </div>
                 </div>

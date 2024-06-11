@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 // import nav data
-import { navLinksData } from '../data';
+import { navLinksData } from '../../data';
 // import components
 import Socials from './Socials';
 

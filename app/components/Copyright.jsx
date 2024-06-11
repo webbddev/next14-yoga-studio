@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 // import motion
 import { motion } from 'framer-motion';
@@ -8,7 +10,7 @@ const Copyright = () => {
   return (
     <div className='bg-dark text-[#dbdbdb] py-6 border-t border-[#2b2b2b]'>
       <div className='container mx-auto'>
-         <motion.div
+        <motion.div
           initial={{ y: 40, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{

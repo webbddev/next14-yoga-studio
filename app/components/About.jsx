@@ -1,6 +1,8 @@
+'use client';
+
 import React from 'react';
 // import about data
-import { aboutData } from '../data';
+import { aboutData } from '../../data';
 // import motion
 import { motion } from 'framer-motion';
 // import variants
