@@ -16,7 +16,7 @@ module.exports = {
     container: {
       padding: {
         DEFAULT: '20px',
-        lg: '0',
+        lg: '20px',
       },
     },
     screens: {
