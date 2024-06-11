@@ -1,16 +1,16 @@
 'use client';
 
-import React from 'react';
-// import about data
 import { aboutData } from '../../data';
-// import motion
 import { motion } from 'framer-motion';
 // import variants
 import { fadeIn } from '../variants';
+import { useState } from 'react';
 
 const About = () => {
-  // destructure about data
-  const { title, subtitle1, subtitle2, btnText, btnIcon } = aboutData;
+  const { title, subtitle1, subtitle2, subtitle3, btnText, btnIcon } =
+    aboutData;
+
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
 
   return (
     <section id='about' className='lg:py-16 xl:pb-[160px]'>
@@ -52,9 +52,17 @@ const About = () => {
               <div className='font-light max-w-[530px] text-grey'>
                 <p className='mb-6'>{subtitle1}</p>
                 <p className='mb-9'>{subtitle2}</p>
-                <button className='btn btn-lg btn-link font-normal'>
-                  {btnText} <div className='text-xl'>{btnIcon}</div>
-                </button>
+                {isButtonClicked ? (
+                  <p className='mb-9'>{subtitle3}</p>
+                ) : (
+                  <button
+                    className='btn btn-lg btn-link font-normal'
+                    onClick={() => setIsButtonClicked(true)}
+                    aria-label='Reveal More Text'
+                  >
+                    {btnText} <div className='text-xl'>{btnIcon}</div>
+                  </button>
+                )}
               </div>
             </div>
           </motion.div>

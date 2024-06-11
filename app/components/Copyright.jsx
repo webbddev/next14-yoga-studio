@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-// import motion
 import { motion } from 'framer-motion';
 
 const Copyright = () => {

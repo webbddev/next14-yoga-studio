@@ -1,13 +1,10 @@
 'use client';
 
-import React from 'react';
-// import contact data
+import Link from 'next/link';
 import { contactData } from '../../data';
-// import motion
 import { motion } from 'framer-motion';
 // import fade in
 import { fadeIn } from '../variants';
-import Link from 'next/link';
 
 const Contact = () => {
   // destructure contact data
