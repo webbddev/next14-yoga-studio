@@ -1,6 +1,5 @@
-'use client'
-
-import React from 'react';
+'use client';
+import Link from 'next/link';
 // import hero data
 import { heroData } from '../../data';
 // import motion
@@ -47,9 +46,11 @@ const Hero = () => {
           </motion.p>
           {/* btn */}
           <motion.div variants={fadeIn('up')}>
+            {/* <Link href='/hero'> */}
             <button className='btn btn-sm lg:btn-lg btn-outline mx-auto lg:mx-0'>
               {btnText} <div>{btnIcon}</div>
             </button>
+            {/* </Link> */}
           </motion.div>
         </div>
         {/* outline text */}
