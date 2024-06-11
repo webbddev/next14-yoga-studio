@@ -54,7 +54,7 @@ const Header = () => {
     >
       <div className='flex items-center justify-between h-full pl-[50px] pr-[60px] md:pr-[80px] md:pl-[80px] lg:pl-[100px] lg:pr-[100px] xl:pl-[140px] xl:pr-[140px] 2xl:pl-[180px] 2xl:pr-[180px]'>
         {/* logo */}
-        <Link href='/'>
+        <Link href='#home'>
           <Image
             className='w-[188px] h-[90px]'
             src={logo}

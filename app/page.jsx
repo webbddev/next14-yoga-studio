@@ -12,10 +12,11 @@ import {
   Footer,
   Copyright,
 } from './components';
+import Loading from './components/loading';
 
 export default function Home() {
   const DynamicMap = dynamic(() => import('./components/Map'), {
-    loading: () => <p>A map is loading</p>,
+    loading: () => <Loading />,
     ssr: false,
   });
 
