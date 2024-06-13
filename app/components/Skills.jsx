@@ -81,7 +81,7 @@ const Skills = () => {
             />
             {/* text */}
             <div className='uppercase font-light tracking-[1.2px] text-center'>
-              Love Meat
+              Full Body Tattoo
             </div>
           </div>
           <div className='w-[150px] lg:w-[210px] flex flex-col items-center gap-y-6'>
@@ -93,7 +93,7 @@ const Skills = () => {
             />
             {/* text */}
             <div className='uppercase font-light tracking-[1.2px] text-center'>
-              No Love Vegans
+              Safely Piercing
             </div>
           </div>
           <div className='w-[150px] lg:w-[210px] flex flex-col items-center gap-y-6'>
