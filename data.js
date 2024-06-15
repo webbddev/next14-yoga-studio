@@ -28,16 +28,45 @@ export const headerData = {
 
 // data.js
 
-export const navLinksData = {
-  items: [
-    { href: '#home', name: 'Home' },
-    { href: '#about', name: 'About' },
-    { href: '#gallery', name: 'Gallery' },
-    { href: '#interview', name: 'Interview' },
-    { href: '#articles', name: 'Articles' },
-    { href: '#contact', name: 'Contact' },
-  ],
-};
+// While both href and hash can be used to link to sections within a page, href is more general and widely recognized in HTML contexts. hash, on the other hand, is more specific to fragment identifiers and is commonly used in JavaScript and routing scenarios. For the sake of consistency and clarity, choose the one that best fits your application's context and the conventions used in your codebase.
+
+// export const navLinksData = {
+//   items: [
+//     { href: '#home', name: 'Home' },
+//     { href: '#about', name: 'About' },
+//     { href: '#gallery', name: 'Gallery' },
+//     { href: '#interview', name: 'Interview' },
+//     { href: '#articles', name: 'Articles' },
+//     { href: '#contact', name: 'Contact' },
+//   ],
+// };
+
+export const links = [
+  {
+    name: 'Home',
+    hash: '#home',
+  },
+  {
+    name: 'About',
+    hash: '#about',
+  },
+  {
+    name: 'Gallery',
+    hash: '#gallery',
+  },
+  {
+    name: 'Interview',
+    hash: '#interview',
+  },
+  {
+    name: 'Articles',
+    hash: '#articles',
+  },
+  {
+    name: 'Contact',
+    hash: '#contact',
+  },
+];
 
 export const socialData = [
   { href: '#', icon: <GrFacebookOption /> },
