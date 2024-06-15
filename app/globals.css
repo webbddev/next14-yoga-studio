@@ -8,9 +8,9 @@ html {
 
 /* apply some general styles */
 @layer base {
-  * {
+  /* * {
     @apply box-border;
-  }
+  } */
   body {
     @apply font-secondary text-lg text-dark bg-[#E5E5E5];
   }
@@ -24,7 +24,7 @@ html {
     @apply text-[60px] lg:text-[118px] tracking-[-2px] leading-none font-rozha mb-4;
   }
   .h2 {
-    @apply text-[40px] xl:text-[85px] text-dark uppercase font-oswald max-w-[236px] leading-none mb-[38px];
+    @apply text-[40px] lg:text-[60px] xl:text-[70px] 2xl:text-[85px] text-dark uppercase font-oswald max-w-[236px] leading-none mb-[38px];
   }
 
   /* buttons */

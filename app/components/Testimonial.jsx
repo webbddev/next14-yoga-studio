@@ -41,7 +41,7 @@ const Testimonial = () => {
                   {/* message, name & occupation */}
                   <div className='flex-1 lg:mt-[54px]'>
                     {/* message */}
-                    <div className='font-thin text-2xl lg:text-[26px] xl:text-[36px] 2xl:text-[40px] leading-normal mb-6 lg:mb-12'>
+                    <div className='font-thin text-2xl lg:text-[26px] xl:text-[26px] 2xl:text-[40px] leading-normal mb-6 lg:mb-12'>
                       {message}
                     </div>
                     {/* name & occupation */}

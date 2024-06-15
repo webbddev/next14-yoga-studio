@@ -52,7 +52,7 @@ const Header = () => {
         isActive ? 'h-[100px] lg:h-[110px] shadow-lg' : 'h-[120px] lg:h-[150px]'
       } fixed bg-white left-0 right-0 z-20 min-w-max w-full mx-auto transition-all duration-500`}
     >
-      <div className='flex items-center justify-between h-full pl-[50px] pr-[60px] md:pr-[80px] md:pl-[80px] lg:pl-[100px] lg:pr-[100px] xl:pl-[140px] xl:pr-[140px] 2xl:pl-[180px] 2xl:pr-[180px]'>
+      <div className='flex items-center justify-between h-full pl-[50px] pr-[60px] md:pr-[80px] md:pl-[80px] lg:pl-[90px] lg:pr-[90px] xl:pl-[100px] xl:pr-[100px] 2xl:pl-[180px] 2xl:pr-[180px]'>
         {/* logo */}
         <Link href='#home'>
           <Image

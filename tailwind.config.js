@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      primary: ['Oswald', 'sans-serif'],
+      // primary: ['Oswald', 'sans-serif'],
       secondary: ['Raleway', 'sans-serif'],
       tertiary: ['Rozha One', 'sans-serif'],
       oswald: ['var(--font-oswald)', 'sans-serif'],
@@ -22,8 +22,8 @@ module.exports = {
     screens: {
       sm: '640px',
       md: '768px',
-      lg: '1024px',
-      xl: '1300px',
+      lg: '960px',
+      xl: '1200px',
       '2xl': '1536px',
     },
     extend: {

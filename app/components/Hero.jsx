@@ -25,7 +25,7 @@ const Hero = () => {
     // bg properties for hero background set in className
     <section
       id='home'
-      className='bg-hero_img bg-cover bg-center min-h-[40vh] lg:h-[948px] xl:h-[1108px] bg-no-repeat relative mt-[120px] lg:mt-[150px]'
+      className='bg-hero_img bg-cover bg-center min-h-[40vh] lg:h-[848px] xl:h-[948px] 2xl:h-[1048px] bg-no-repeat relative mt-[120px] lg:mt-[150px]'
     >
       <motion.div
         variants={container}
@@ -34,7 +34,7 @@ const Hero = () => {
         className='container mx-auto min-h-[40vh] lg:h-full flex items-center xl:justify-end'
       >
         {/* text & btn */}
-        <div className='text-white text-center lg:text-left lg:max-w-[540px] lg:ml-auto'>
+        <div className='text-white text-center lg:text-left lg:max-w-[550px] 2xl:max-w-[600px] lg:ml-auto'>
           <motion.h1 variants={fadeIn('down')} className='h1'>
             {title}
           </motion.h1>

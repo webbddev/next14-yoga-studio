@@ -19,26 +19,17 @@ const About = () => {
           {/* numbers */}
           <motion.div
             variants={fadeIn('right')}
+            // initial='visible'
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
             className='flex flex-col lg:flex-row flex-1'
           >
-            <div className='text-[360px] xl:text-[720px] leading-none font-rozha lg:-tracking-[0.055em] bg-about_img bg-no-repeat bg-right bg-clip-text text-transparent'>
+            <div className='text-[360px] xl:text-[620px] 2xl:text-[720px] leading-none font-rozha lg:-tracking-[0.055em] bg-about_img bg-no-repeat bg-right bg-clip-text text-transparent'>
               01
             </div>
           </motion.div>
-          {/* <motion.div
-            variants={fadeIn('down')}
-            initial='hidden'
-            whileInView={'show'}
-            viewport={{ once: false, amount: 0.7 }}
-            className='flex flex-col lg:flex-row flex-1'
-          >
-            <div className='text-[360px] xl:text-[720px] leading-none font-tertiary lg:-tracking-[0.055em] bg-about_img bg-no-repeat bg-right bg-clip-text text-transparent'>
-              1
-            </div>
-          </motion.div> */}
+
           {/* text */}
           <motion.div
             variants={fadeIn('left')}

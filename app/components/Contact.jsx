@@ -22,7 +22,7 @@ const Contact = () => {
             className='flex-1'
           >
             {/* title */}
-            <h2 className='font-thin'>{title}</h2>
+            <h2 className='h2 max-w-[490px]'>{title}</h2>
             {/* info items */}
             <div className='flex flex-col xl:flex-row gap-x-5 gap-y-16 xl:gap-y-0'>
               {info.map((item, index) => {
