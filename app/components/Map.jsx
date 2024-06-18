@@ -32,7 +32,7 @@ const markers = [
   {
     position: [34.0211, -118.3965],
     title: 'Yoga Studio Lucia LA',
-    subtitle: 'To address all issues (including breaking changes)',
+    subtitle: 'Your local LA branch',
     image: '/img/map/4.png',
   },
 ];

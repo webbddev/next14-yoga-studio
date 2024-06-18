@@ -14,9 +14,14 @@ const rozha = Rozha_One({
 });
 
 export const metadata = {
-  title: 'Yoga Lucia Studio',
+  title: '🧘🏻‍♀️ Yoga Lucia Studio 🧘🏼',
   description: 'Yoga Studio in Chisinau, Moldova',
   keywords: 'yoga, yoga classes, botanica, chisinau, moldova, studio',
+  author: 'Lucia Yoga Studio',
+  creator: 'Nicholas Tetradov',
+  applicationName: 'Next.js',
+  date: '2024-06-17',
+  language: 'en-US',
 };
 export default function RootLayout({ children }) {
   return (
